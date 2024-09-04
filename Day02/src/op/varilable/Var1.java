@@ -1,4 +1,4 @@
-package varilable;
+package op.varilable;
 
 public class Var1 {
     int num1 = 10; //전역변수

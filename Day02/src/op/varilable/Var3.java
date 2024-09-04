@@ -1,4 +1,4 @@
-package varilable;
+package op.varilable;
 
 public class Var3 {
     public double calc(int a, int b) {

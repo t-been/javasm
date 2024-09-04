@@ -1,4 +1,4 @@
-package varilable;
+package op.varilable;
 
 public class Var5 {
     public static void main(String[] args) {
