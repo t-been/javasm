@@ -8,6 +8,8 @@ public class Car {
     private String color;
     private double fuelSize;
     private double currFuel;
+    private Engine engine;
+
 
     public Car() {
         Random rand = new Random();
@@ -29,6 +31,14 @@ public class Car {
         this.currFuel = currFuel;
     }
 
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
@@ -37,6 +47,7 @@ public class Car {
                 ", color='" + color + '\'' +
                 ", fuelSize=" + fuelSize +
                 ", currFuel=" + currFuel +
+                ", engine=" + engine +
                 '}';
     }
 
@@ -63,5 +74,27 @@ public class Car {
     }
 }
 
-    // fuelSize가 40인데 80을 넣을려고하면 40만큼만 넣고 나머지는 넣지 않는 코드를 추가한다.
+class Engine {
+    private int serial;
+    private int size;
+    private String name;
 
+    public  Engine() {
+
+    }
+
+    public Engine(int serial, int size, String name) {
+        this.serial = serial;
+        this.size = size;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "serial=" + serial +
+                ", size=" + size +
+                ", name='" + name + '\'' +
+                '}';
+    }
+}
