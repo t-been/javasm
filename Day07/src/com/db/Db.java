@@ -1,4 +1,7 @@
 package com.db;
 
-public abstract class Db {
+public interface Db {
+    void insert(Object obj);
+    void update(Object obj);
+    void delete(Object obj);
 }

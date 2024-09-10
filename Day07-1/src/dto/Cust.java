@@ -1,11 +1,11 @@
-package com.db;
+package dto;
 
-public class Customer {
+public class Cust {
     private String id;
     private String pwd;
     private String name;
-    public Customer() {}
-    public Customer(String id, String pwd, String name) {
+    public Cust() {}
+    public Cust(String id, String pwd, String name) {
         this.id = id;
         this.pwd = pwd;
         this.name = name;
